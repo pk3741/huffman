@@ -6,3 +6,4 @@ Simple algorithm which allows to encode message using Huffman coding method.
 * cleanup 
 * refactoring 
 * maintainability improvement
+* return output message of output codes
