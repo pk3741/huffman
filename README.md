@@ -1,1 +1,1 @@
-huffman
+Huffman algorithm (in progress).
