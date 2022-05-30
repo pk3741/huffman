@@ -130,7 +130,6 @@ int main()
                 std::cout << (*it).data << (*it).wage << std::endl;
             }
             std::cout << "\n";
-            leaves.sort(compLeaf);
             Leaf * left = new Leaf(leaves.front());
             std::cout << "taking: " << left->wage << std::endl;
             //left->code = "0";
@@ -141,11 +140,13 @@ int main()
             leaves.pop_front();
             
             leaves.push_back(Leaf(left->wage + right->wage, left, right, left->data+ right->data));
+            leaves.sort(compLeaf);
             std::cout << "Epoch " << i << ":" << std::endl;
             for (auto it = leaves.cbegin(); it != leaves.cend(); it++) {
                 std::cout << (*it).data << (*it).wage << std::endl;
             }
             std::cout << "\n";
+            leaves.sort(compLeaf);
             i++;
         }
         else
